@@ -1,0 +1,16 @@
+.reviewsList {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .reviewItem {
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    padding: 15px;
+    border-radius: 5px;
+  }
+  
+  .reviewItem h4 {
+    margin-top: 0;
+    margin-bottom: 10px;
+  }

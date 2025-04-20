@@ -1,0 +1,114 @@
+.movieDetailsPage {
+    padding: 20px;
+    margin: 0 auto;
+  }
+  
+  .goBackButton {
+    margin-bottom: 20px;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+  .movieInfo {
+    display: flex;
+    gap: 30px;
+    margin-bottom: 20px;
+  }
+  
+  .poster {
+    width: 300px;
+    border-radius: 8px;
+  }
+  
+  .detailsContainer {
+    flex: 1;
+  }
+  
+  .title {
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+  }
+  
+  .releaseDate,
+  .voteAverage {
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+  }
+  
+  .overviewTitle {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-top: 20px;
+    margin-bottom: 10px;
+  }
+  
+  .overview {
+    font-size: 1.1rem;
+    line-height: 1.7;
+  }
+  
+  .genresTitle {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-top: 25px;
+    margin-bottom: 10px;
+  }
+  
+  .genres {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+  
+  .genreBadge {
+    padding: 8px 15px;
+    border-radius: 20px;
+    font-size: 0.9rem;
+  }
+  
+  .separator {
+    margin: 30px 0;
+    border: 1px solid #ddd;
+  }
+  
+  .additionalInfo {
+    margin-top: 30px;
+  }
+  
+  .additionalInfoTitle {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  .additionalLinks {
+    display: flex;
+    gap: 20px;
+  }
+  
+  .castLink,
+  .reviewsLink {
+    color: #0078d7;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.1rem;
+  }
+  
+  .castLink:hover,
+  .reviewsLink:hover {
+    text-decoration: underline;
+  }
+  
+  @media (max-width: 768px) {
+    .movieInfo {
+      flex-direction: column;
+    }
+  
+    .poster {
+      width: 100%;
+      max-height: 400px;
+      object-fit: contain;
+    }
+  }

@@ -1,0 +1,21 @@
+.castList {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    gap: 1em;
+    overflow-x: auto;
+    height: fit-content;
+  }
+  
+  .castItem {
+    flex-shrink: 0;
+    width: 10em;
+    height: fit-content;
+    text-align: center;
+  }
+  
+  .castItem img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+  }
