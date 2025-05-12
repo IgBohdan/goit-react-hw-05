@@ -1,4 +1,4 @@
-import { lazy, Suspense, useEffect, useState } from "react";
+import { lazy, Suspense, useEffect, useRef, useState } from "react";
 import {
   Link,
   Outlet,
@@ -20,6 +20,7 @@ const MovieDetailsPage = () => {
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
   const location = useLocation();
+  const backLink = useRef(location.state?.from ?? "/");
   const navigate = useNavigate();
   const imageUrlBase = "https://image.tmdb.org/t/p/w500";
 
@@ -45,11 +46,7 @@ const MovieDetailsPage = () => {
   }, [movieId]);
 
   const handleGoBack = () => {
-    if (location.state?.from) {
-      navigate(location.state.from);
-    } else {
-      navigate("/movies");
-    }
+    navigate(backLink.current);
   };
 
   if (loading) {
